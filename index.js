@@ -31,6 +31,10 @@ class Cliente {
 }
 
 let impuesto = new Impuesto(1000, 15000)
-console.log(impuesto.montobrutoanual)
-console.log(impuesto.deducciones)
-console.log(impuesto.monto_bruto_anual)
+//console.log(impuesto.montobrutoanual)
+//console.log(impuesto.deducciones)
+//console.log(impuesto.monto_bruto_anual) 
+
+let cliente = new Cliente('Nayareth Nain', impuesto);
+console.log(cliente.Impuesto.montobrutoanual);
+console.log(cliente.nombre);

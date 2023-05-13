@@ -24,22 +24,22 @@ class Impuesto {
 
 // CLASE CLIENTES
 class Cliente {
-    constructor(nombre, Impuesto) {
-        console.log(typeof nombre)
-        // if (typeof nombre !== 'string') {
-        //     throw new Error('El valor debe ser un string')
-        // }
-        // if (typeof Impuesto !== 'Impuesto') {
-        //     throw new Error('El valor debe ser un string')
-        // }
+    constructor(nombre, impuesto) {
+        console.log(typeof impuesto)
+        if (typeof nombre !== 'string') {
+            throw new Error('El valor debe ser un string')
+        }
+        if (!(impuesto instanceof Impuesto)) {
+            throw new Error('El valor debe ser un object')
+        }
         this.nombre = nombre
-        this.Impuesto = Impuesto
+        this.impuesto = impuesto
     }
 
     // (monto_bruto_anual - deducciones) * 21%
     calcularImpuesto() {
-        let montoBrutoAnual = this.Impuesto.montobrutoanual
-        let deducciones = this.Impuesto.deducciones
+        let montoBrutoAnual = this.impuesto.montobrutoanual
+        let deducciones = this.impuesto.deducciones
 
         return (montoBrutoAnual - deducciones) * (21 / 100)
     }

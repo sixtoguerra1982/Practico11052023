@@ -46,7 +46,7 @@ class Cliente {
 }
 
 // INSTANCIAMOS IMPUESTOS
-let impuesto = new Impuesto(1000, 15000)
+let impuesto = new Impuesto(12000000, 2000000)
 console.log(impuesto.montobrutoanual)
 console.log(impuesto.deducciones)
 

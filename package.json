@@ -1,0 +1,17 @@
+{
+  "name": "practico11052023",
+  "version": "1.0.0",
+  "description": "Desafío - Clases en ES6",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel ./index.js -d lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5"
+  }
+}
